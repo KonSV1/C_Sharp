@@ -14,7 +14,7 @@ while(distance > 10)
   else
   {
     time = distance / (secondFriendSpeed + dogSpeed);
-   // Console.WriteLine(time);
+   //Console.WriteLine(time);
     friend = 1;  
   }
     distance = distance - (firstFriendSpeed + secondFriendSpeed) * time;
