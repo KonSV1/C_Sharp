@@ -1,13 +1,16 @@
-﻿// Определить день недели по циыре от 1 до 7
-
+﻿// Запросить число "N", вывести на экра все целые числа от "-N" до "N"
 Console.Clear();
 Console.Write("Введите число ");
 int num = Convert.ToInt32(Console.ReadLine());
-int numOtr = num * -1;
-int count = numOtr;
-
-while(count <= num)
+int count;
+if (num > 0) count = -num;
+else
 {
-    Console.Write($"{count}, ");
-    count +=1;
+    count = num;
+    num = -num;
 }
+    while (count <= num)
+    {
+        Console.Write($"{count}, ");
+        count += 1;
+    }
