@@ -4,7 +4,7 @@
 // 161 -> да
 
 Console.Clear();
-Console.Write("Введите число больше 23 ");
+Console.Write("Введите число ");
 int num = Convert.ToInt32(Console.ReadLine());
 if ((num % 7 == 0) & (num % 23 == 0)) Console.WriteLine($"{num} -> Да");
 else
