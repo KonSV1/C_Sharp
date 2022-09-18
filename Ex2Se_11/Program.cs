@@ -3,7 +3,7 @@
 //782 -> 72
 //918 -> 98
 
-Console.Clear();
+//Console.Clear();
 int num = new Random().Next(99, 1000);
 Console.WriteLine(num);
 int num1 = num /100;
