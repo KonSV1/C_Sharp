@@ -7,7 +7,5 @@ Console.Clear();
 int num = new Random().Next(99, 1000);
 Console.WriteLine(num);
 int num1 = num /100;
-//Console.Write(num1);
 int num2 = num % 10;
-//Console.Write(num2);
 Console.WriteLine($"{num1}{num2}");
