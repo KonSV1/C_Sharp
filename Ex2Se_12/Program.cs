@@ -13,7 +13,11 @@ else
 {
 num3 = num2 % num1;
     if(num3 == 0) Console.WriteLine($"Число {num2} кратно числу {num1}");
-    if (num3 > 0) Console.WriteLine($"Число {num2}  не кратно числу {num1}, остаток от деления равен {num3}");
+    else
+    {
+       Console.WriteLine($"Число {num2}  не кратно числу {num1}, остаток от деления равен {num3}"); 
+    }
+    
 }
     
 
