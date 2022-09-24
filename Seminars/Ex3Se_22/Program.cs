@@ -3,7 +3,7 @@
 // 5 -> 1, 4, 9, 16, 25.
 // 2 -> 1,4
 
-Console.Clear();
+//Console.Clear();
 Console.Write("Введите число ");
 int N = Convert.ToInt32(Console.ReadLine());
 int[] arrey = new int[N];
