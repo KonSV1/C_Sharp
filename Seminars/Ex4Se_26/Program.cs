@@ -3,7 +3,7 @@
 // 78 -> 2
 // 89126 -> 5
 
-Console.Clear();
+//Console.Clear();
 Console.Write("Введите число ");
 int n = Convert.ToInt32(Console.ReadLine());
 //Console.WriteLine(Math.Floor(Math.Log10(n) + 1));
