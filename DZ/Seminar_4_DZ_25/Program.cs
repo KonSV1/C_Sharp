@@ -8,7 +8,12 @@ Console.Write("Введите натуральное число B ");
 int b = Convert.ToInt32(Console.ReadLine());
 if(b > 0)
 {
-    double c = Math.Pow(a, b);
+    //double c = Math.Pow(a, b);
+    int c = 1;
+    for(int i = 0; i < b; i++)
+    {
+        c = c * a;
+    }
     Console.WriteLine($"{a}, {b} -> {c}");
 }
 else Console.WriteLine("Число В не натуральное. Попробуй еще раз.");
