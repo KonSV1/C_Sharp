@@ -1,4 +1,5 @@
 ﻿// Запросить число "N", вывести на экра все целые числа от "-N" до "N"
+
 Console.Clear();
 Console.Write("Введите число ");
 int num = Convert.ToInt32(Console.ReadLine());

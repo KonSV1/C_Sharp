@@ -1,6 +1,6 @@
 ﻿// Определить день недели по цифре от 1 до 7
 
-Console.Clear();
+//Console.Clear();
 Console.Write("Введите число от 1 до 7 ");
 int num = Convert.ToInt32(Console.ReadLine());
 if(num > 7) Console.WriteLine("Нет такого дня недели, попробуй снова");
