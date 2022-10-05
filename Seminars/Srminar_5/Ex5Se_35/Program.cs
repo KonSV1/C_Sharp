@@ -6,8 +6,6 @@ Console.Clear();
 int n = 123;
 int[] arrey = new int[n];
 FillArrey();
-int num = 10;
-int num1 = 99;
 PrintArrey();
 
 
