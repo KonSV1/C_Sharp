@@ -9,5 +9,5 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 if(num1 > num2) Console.WriteLine($"число {num1} больше числа {num2}");
 else
 {
-    Console.WriteLine($"число {num1} меньше числа {num2}");
+    Console.WriteLine($"Число {num1} меньше числа {num2}");
 }
