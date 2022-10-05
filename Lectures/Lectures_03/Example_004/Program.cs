@@ -10,7 +10,7 @@ void PrintArrey(int[] arrey)            // метод для вывода эле
     }
     Console.WriteLine();
 }
-void SelectionSort(int[] arrey)         //метод сортировки
+void SelectionSort(int[] arrey)        //метод сортировки
 {
     for (int i =0; i < arrey.Length - 1; i++)       //Поиск минимального значения (позиции с мин значением)
     {

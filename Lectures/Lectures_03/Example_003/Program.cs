@@ -29,7 +29,7 @@ string newText = Replace(text, ' ', '_');
 Console.WriteLine(newText);
 newText = Replace(newText, 'к', 'К');
 Console.WriteLine(newText);
-//newText = Replace(newText, 'С', 'с');           //Прописные С в тексте не встречаются, так что бесполезно
+//newText = Replace(newText, 'С', 'с');           //Прописные С в тексте не встречаются, данные аргуметны бесполезны
 //Console.WriteLine(newText);
 newText = Replace(newText, 'с', 'С');           //Заменим "с" на "С"
 Console.WriteLine(newText);
