@@ -14,8 +14,7 @@ void DecToBin() // Метод конвертации 10 -> 2 и записи в 
 {
     for (int i = 0; i < r; i++)
     {
-        if (a1 % 2 != 0) arrey[r - 1 - i] = 1;
-        else arrey[r - 1 - i] = 0;
+        arrey[r - 1 - i] = a1 % 2; // массив заполняется в обратном порядке от "R-1 -> 0"
         a1 = a1 / 2;
     }
 }
@@ -24,9 +23,9 @@ void DecToBin() // Метод конвертации 10 -> 2 и записи в 
 void PrintArrey()
 {
     Console.Write($"{a} -> [");
-    for (int i = 0; i < r-1; i++)
+    for (int i = 0; i < r - 1; i++)
     {
         Console.Write($"{arrey[i]},");
     }
-    Console.Write($"{arrey[r-1]}]");
+    Console.Write($"{arrey[r - 1]}]");
 }
