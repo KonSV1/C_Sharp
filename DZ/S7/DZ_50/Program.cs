@@ -11,13 +11,13 @@ Console.Write("Введите номер строки в массиве ");
 int row = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите номер столбца в массиве ");
 int colum = Convert.ToInt32(Console.ReadLine());
-int m = new Random().Next(1, 10);
-int n = new Random().Next(1, 10);
+int m = new Random().Next(2, 10);
+int n = new Random().Next(2, 10);
 int[,] arrey = new int[m, n];
 
 FillArrey();
 PrintArrey();
-SerchIndex();
+SerchPos();
 
 
 
@@ -45,7 +45,7 @@ void PrintArrey()
     Console.WriteLine();
 }
 
-void SerchIndex()
+void SerchPos()
 {
     if ((row > arrey.GetLength(0)) || (colum > arrey.GetLength(1)))
     {

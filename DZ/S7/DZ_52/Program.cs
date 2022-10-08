@@ -7,8 +7,8 @@
 
 
 Console.Clear();
-int m = 4; //new Random().Next(1, 10);
-int n = 3; //new Random().Next(1, 10);
+int m = new Random().Next(1, 10);
+int n = new Random().Next(1, 10);
 int[,] arrey = new int[m, n];
 
 FillArrey();

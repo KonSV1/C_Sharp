@@ -35,7 +35,7 @@ void PrintArrey()
     {
         for (int j = 0; j < arrey.GetLength(1); j++)   
         {
-            Console.Write($"{arrey[i, j]}   ");
+            Console.Write("{0,-10}",arrey[i, j]);
         }
         Console.WriteLine();
     }
