@@ -29,9 +29,7 @@ void PrintArrey(int[,] arr)
         {
             if (arr[i, j] == 0)
             {
-                Console.ForegroundColor = ConsoleColor.Black;
-                Console.Write("{0,-4}","");
-                Console.ResetColor();
+                Console.Write("{0,-4}",String.Empty);
             }
             else Console.Write("{0,-4}",arr[i, j]);
         }

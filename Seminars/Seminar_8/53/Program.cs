@@ -12,8 +12,6 @@ ZamenaArrey();
 PrintArrey();
 
 
-
-
 void ZamenaArrey()
 {
     int temp = 0;
