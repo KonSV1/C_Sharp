@@ -29,7 +29,7 @@ void FillMonoArrey(int[] arr)
     {
         for (int j = 0; j < i; j++)
         {
-        Flag: arr[i] = new Random().Next(10, 100) + 1;
+        Flag: arr[i] = new Random().Next(10, 100);
             if (arr[i] == arr[j]) goto Flag;
         }
     }
