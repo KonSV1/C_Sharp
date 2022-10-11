@@ -18,16 +18,17 @@ int n = Convert.ToInt32(Console.ReadLine());
 int[,] arrey = new int[m, n];
 FillArrey();
 PrintArrey();
+PrintResult();
 
 
 
-void FillArrey() // Метод создания двумерного массива (m,n) элементов, и заполенения ПСВЧ [0,9]
+void FillArrey()
 {
-    for (int i = 0; i < arrey.GetLength(0); i++)     // GetLength(0) - определяет сколько в массиве строк
+    for (int i = 0; i < arrey.GetLength(0); i++)
     {
-        for (int j = 0; j < arrey.GetLength(1); j++)   // GetLength(1) - определяет сколько в массиве столбцов
+        for (int j = 0; j < arrey.GetLength(1); j++)
         {
-            arrey[i, j] = i + j;
+            arrey[i, j] = new Random().Next(0, 10);
         }
     }
 }
@@ -43,14 +44,18 @@ void PrintArrey()
         }
         Console.WriteLine();
     }
+}
+
+void PrintResult()
+{
     Console.WriteLine("Измененный массив");
     for (int i = 0; i < arrey.GetLength(0); i++)
     {
         for (int j = 0; j < arrey.GetLength(1); j++)
         {
-            if((i % 2 == 0) && (j % 2 == 0) && (i != 0) && (j != 0))
+            if ((i % 2 == 0) && (j % 2 == 0) && (i != 0) && (j != 0))
             {
-                arrey[i,j] = arrey[i,j]*arrey[i,j];
+                arrey[i, j] = arrey[i, j] * arrey[i, j];
             }
             Console.Write($"{arrey[i, j]} ");
         }

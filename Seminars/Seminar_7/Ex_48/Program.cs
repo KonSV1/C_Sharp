@@ -10,7 +10,7 @@ Console.Write("Введите количество строк в массиве 
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите количество столбцов в массиве ");
 int n = Convert.ToInt32(Console.ReadLine());
-int[,] arrey = new int[m,n];
+int[,] arrey = new int[m, n];
 FillArrey();
 PrintArrey();
 
@@ -29,12 +29,12 @@ void FillArrey() // Метод создания двумерного масси�
 
 void PrintArrey()
 {
-        Console.WriteLine($"m = {m}; n = {n}");
-    for (int i = 0; i < arrey.GetLength(0); i++)     
+    Console.WriteLine($"m = {m}; n = {n}");
+    for (int i = 0; i < arrey.GetLength(0); i++)
     {
-        for (int j = 0; j < arrey.GetLength(1); j++)   
+        for (int j = 0; j < arrey.GetLength(1); j++)
         {
-            Console.Write($"{arrey[i, j]} ");
+            Console.Write("{0, -3}", arrey[i, j]);
         }
         Console.WriteLine();
     }
