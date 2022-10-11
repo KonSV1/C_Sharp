@@ -41,7 +41,7 @@ void PrintArrey(int[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write("{0,-4}", arr[i, j]);
+            Console.Write("{0,-4}", arr[i, j]); // для больших размеров (увеличить отсуп)
         }
         Console.WriteLine();
     }
