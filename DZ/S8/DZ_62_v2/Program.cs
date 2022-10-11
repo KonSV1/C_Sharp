@@ -1,14 +1,14 @@
 ﻿// Заполните массив 4*4 спирально (улитка)
 
 Console.Clear();
-int rows = 4;
-int colums = 4;
+int rows = 8;
+int colums = 8;
 int[,] arrey = new int[rows, colums];
 int x = 0;
 int round = 0;
-while (x <= rows * colums - 1)
+while (x < rows * colums)
 {
-    for (int j = round ; j < colums - round; j++)        //Заполняем гоизонталь вправо    
+    for (int j = round; j < colums - round; j++)        //Заполняем гоизонталь вправо    
     {
         arrey[round, j] = x;
         x++;
