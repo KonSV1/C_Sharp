@@ -8,12 +8,12 @@ int[] num = new int[arrey.GetLength(0) * arrey.GetLength(1) * arrey.GetLength(2)
 FillMonoArrey(num);
 for (int i = 0; i < arrey.GetLength(0); i++)
 {
-    for (int j = 0; j < arrey.GetLength(1); j++)
+    for (int k = 0; k < arrey.GetLength(2); k++)
     {
-        for (int k = 0; k < arrey.GetLength(2); k++)
+        for (int j = 0; j < arrey.GetLength(1); j++)
         {
-            arrey[i, k, j] = num[n];
-            Console.Write($"{arrey[i, k, j]}  index - [{i}, {k}, {j}]   ");
+            arrey[i,j, k] = num[n];
+            Console.Write($"{arrey[i, j, k]}  index - [{i}, {j}, {k}]   ");
             n++;
         }
         Console.WriteLine();
